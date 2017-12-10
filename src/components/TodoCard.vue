@@ -1,6 +1,6 @@
 <template lang="jade">
 .todo_card
-  img(:src="@/assets/logo.png")
+  img(src="@/assets/logo.png")
 </template>
 
 <script>

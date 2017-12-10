@@ -1,11 +1,10 @@
 <template lang="jade">
+p Eh
 </template>
 
 <script>
 export default {
-  name: 'PageGettingBy',
-  data () {
-  }
+  name: 'PageGettingBy'
 }
 </script>
 

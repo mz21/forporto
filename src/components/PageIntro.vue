@@ -1,11 +1,10 @@
 <template lang="jade">
+p Hi
 </template>
 
 <script>
 export default {
-  name: 'PageIntro',
-  data () {
-  }
+  name: 'PageIntro'
 }
 </script>
 

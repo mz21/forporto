@@ -5,7 +5,7 @@
       :to="{ name: tab.name}",
       v-bind:class="{active: tab.active}",
       v-bind:key="key",
-      v-on:click="changenav(key)").tab
+      v-on:click.native="changenav(key)").tab
         {{ tab.title }}
 </template>
 
@@ -22,15 +22,18 @@ export default {
         },
         {
           title: 'GETTING BY',
-          name: 'pagegettingby'
+          name: 'pagegettingby',
+          active: false
         },
         {
           title: 'TO DO',
-          name: 'pagetodo'
+          name: 'pagetodo',
+          active: false
         },
         {
           title: 'ITINERARIES',
-          name: 'pageitineraries'
+          name: 'pageitineraries',
+          active: false
         }
       ]
     }

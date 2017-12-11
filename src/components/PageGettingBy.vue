@@ -35,10 +35,6 @@ export default {
           icon: logo
         },
         {
-          name: 'TRANSPORTATION',
-          icon: logo
-        },
-        {
           name: 'WEATHER',
           icon: logo
         },
@@ -48,10 +44,6 @@ export default {
         },
         {
           name: 'CURRENCY',
-          icon: logo
-        },
-        {
-          name: 'ELECTRONICS',
           icon: logo
         },
         {

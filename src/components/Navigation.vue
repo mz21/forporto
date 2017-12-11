@@ -40,8 +40,6 @@ export default {
   },
   methods: {
     changenav: function (tabId) {
-      console.log('hiii')
-      console.log(tabId)
       for (let i = 0; i < this.tabs.length; i++) {
         this.tabs[i].active = false
       }
@@ -52,6 +50,7 @@ export default {
 </script>
 
 <style scoped lang="sass">
+@import '~@/globals/variables'
 .navigation
   width: 100%
   background: white
@@ -70,7 +69,7 @@ export default {
   font-size: 0.6875rem
   letter-spacing: 0.1px
 .active
-  color: rgb(144,19,255)
+  color: $purple
   padding-bottom: 0.3rem
-  border-bottom: 3px solid rgb(144,19,255)
+  border-bottom: 3px solid $purple
 </style>

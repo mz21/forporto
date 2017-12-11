@@ -73,15 +73,17 @@ export default {
 </script>
 
 <style scoped lang="sass">
+@import '~@/globals/variables'
 .container
   height: calc(100% - 56px)
   width: 100%
 .ribbon
   height: 80px
-  width: 100000px
-  oveflow-x: hidden
+  width: 100%
   display: flex
   align-items: center
   background: rgb(248,248,248)
-  padding-left: 0.5rem
+  padding: 0 0.5rem
+  flex-wrap: nowrap
+  @extend .horizontal-scroll
 </style>

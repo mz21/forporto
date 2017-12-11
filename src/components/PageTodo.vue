@@ -43,16 +43,17 @@ export default {
 </script>
 
 <style scoped lang="sass">
+@import '~@/globals/variables'
 .container
   height: calc(100% - 56px)
 .map_section
   height: 45%
-  background: rgb(248,248,248)
+  background: $background-gray
 .todo_section
   height: 55%
-  width: 100000px
-  overflow-x: scroll
+  width: 100%
   display: flex
   align-items: center
   padding-left: 1.5rem
+  @extend .horizontal-scroll
 </style>

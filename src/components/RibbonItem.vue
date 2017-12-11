@@ -22,6 +22,7 @@ export default {
   display: flex
   align-items: center
   justify-content: center
+  flex: 0 0 auto
 .icon
   height: 29px
   width: auto

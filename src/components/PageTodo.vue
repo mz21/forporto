@@ -51,7 +51,7 @@ export default {
 .todo_section
   height: 55%
   width: 100000px
-  overflow: hidden
+  overflow-x: scroll
   display: flex
   align-items: center
   padding-left: 1.5rem

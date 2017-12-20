@@ -47,7 +47,8 @@ export default {
       style: 'mapbox://styles/mapbox/light-v9',
       center: [16.3694624, 48.2162398],
       zoom: 9
-    });
+    })
+    console.log(map)
   }
 }
 </script>

@@ -42,13 +42,13 @@ export default {
   },
   mounted () {
     mapboxgl.accessToken = 'pk.eyJ1IjoibXpob25nMjEiLCJhIjoiMENiR1A5VSJ9.juucE1xKoXyVQWMT3nl7zA'
+    // eslint-disable-next-line
     const map = new mapboxgl.Map({
       container: 'map_section',
       style: 'mapbox://styles/mapbox/light-v9',
       center: [16.3694624, 48.2162398],
       zoom: 9
     })
-    console.log(map)
   }
 }
 </script>

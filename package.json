@@ -11,7 +11,7 @@
     "test": "npm run unit",
     "lint": "eslint --ext .js,.vue src test/unit/specs",
     "build": "node build/build.js",
-    "deploy": "npm run build && git push heroku master"
+    "deploy": "git push heroku master"
   },
   "dependencies": {
     "express": "^4.16.2",

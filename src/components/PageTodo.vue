@@ -1,6 +1,6 @@
 <template lang="jade">
 .container
-  .map_section
+  #map_section
   .todo_section
     TodoCard(v-for="card in cards",
     :key="card.name",
@@ -15,6 +15,7 @@
 
 <script>
 import TodoCard from '@/components/TodoCard'
+import mapboxgl from 'mapbox-gl'
 
 export default {
   name: 'PageTodo',
@@ -38,6 +39,15 @@ export default {
         }
       ]
     }
+  },
+  mounted () {
+    mapboxgl.accessToken = 'pk.eyJ1IjoibXpob25nMjEiLCJhIjoiMENiR1A5VSJ9.juucE1xKoXyVQWMT3nl7zA'
+    const map = new mapboxgl.Map({
+      container: 'map_section',
+      style: 'mapbox://styles/mapbox/light-v9',
+      center: [16.3694624, 48.2162398],
+      zoom: 9
+    });
   }
 }
 </script>
@@ -46,7 +56,7 @@ export default {
 @import '~@/globals/variables'
 .container
   height: calc(100% - 56px)
-.map_section
+#map_section
   height: 45%
   background: $background-gray
 .todo_section

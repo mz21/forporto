@@ -16,23 +16,18 @@ export default {
     return {
       tabs: [
         {
-          title: 'VIENNA',
+          title: 'A DAY IN PORTO',
           name: 'pageintro',
           active: true
         },
         {
-          title: 'GETTING BY',
-          name: 'pagegettingby',
+          title: 'RECOMMENDATIONS',
+          name: 'pagerecommendations',
           active: false
         },
         {
-          title: 'TO DO',
-          name: 'pagetodo',
-          active: false
-        },
-        {
-          title: 'ITINERARIES',
-          name: 'pageitineraries',
+          title: 'WHAT TO KNOW',
+          name: 'pagewhattoknow',
           active: false
         }
       ]
@@ -53,10 +48,10 @@ export default {
 @import '~@/globals/variables'
 .navigation
   width: 100%
-  background: white
+  background: whitesmoke
+  height: $nav-height
 .nav_container
   width: 92%
-  height: 3.5rem
   margin: 0 auto
   display: flex
   justify-content: space-around
@@ -64,10 +59,10 @@ export default {
   padding-top: 18px
 .tab
   text-decoration: none
-  color: rgb(196,196,196)
+  color: rgb(40,40,40)
   font-weight: 600
-  font-size: 0.6875rem
-  letter-spacing: 0.1px
+  font-size: 9px
+  letter-spacing: 0.5px
 .active
   color: $purple
   padding-bottom: 0.3rem

@@ -1,9 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import PageIntro from '@/components/PageIntro'
-import PageGettingBy from '@/components/PageGettingBy'
-import PageItineraries from '@/components/PageItineraries'
-import PageTodo from '@/components/PageTodo'
+import PageWhatToKnow from '@/components/PageWhatToKnow'
+import PageRecommendations from '@/components/PageRecommendations'
 
 Vue.use(Router)
 
@@ -16,19 +15,14 @@ export default new Router({
       component: PageIntro
     },
     {
-      path: '/todo/',
-      name: 'pagetodo',
-      component: PageTodo
+      path: '/know/',
+      name: 'pagewhattoknow',
+      component: PageWhatToKnow
     },
     {
-      path: '/getting-by/',
-      name: 'pagegettingby',
-      component: PageGettingBy
-    },
-    {
-      path: '/itineraries/',
-      name: 'pageitineraries',
-      component: PageItineraries
+      path: '/recommendations/',
+      name: 'pagerecommendations',
+      component: PageRecommendations
     }
   ]
 })

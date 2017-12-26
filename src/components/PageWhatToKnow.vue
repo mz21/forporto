@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'PageNearby'
+  name: 'PageWhatToKnow'
 }
 </script>
 

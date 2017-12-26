@@ -60,7 +60,7 @@ export default {
 .tab
   text-decoration: none
   color: rgb(40,40,40)
-  font-weight: 600
+  font-weight: 500
   font-size: 10px
 .active
   color: $purple

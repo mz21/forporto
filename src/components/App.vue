@@ -16,15 +16,14 @@ export default {
 
 <style lang="sass">
 @import 'sanitize.css'
-@font-face
-  font-family: GothamNarrow
-  src: url("~@/assets/fonts/GothamNarrow-Book.otf") format("opentype")
+@import '~@/assets/fonts/GothamNarrowSsmBook'
+@import '~@/assets/fonts/GothamNarrowSsmMedium'
 p, h1, h2, h3, h4, h5, h6
   margin: 0
 html, body, #app
   width: 100%
   height: 100%
-  font-family: GothamNarrow, 'Avenir Next', Helvetica
+  font-family: 'Gotham Narrow SSm A', 'Gotham Narrow SSm B', 'Avenir Next', Helvetica
   -webkit-font-smoothing: antialiased
   text-rendering: optimizeLegibility
 html

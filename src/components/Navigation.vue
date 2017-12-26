@@ -16,7 +16,7 @@ export default {
     return {
       tabs: [
         {
-          title: 'A DAY IN PORTO',
+          title: 'AT A GLANCE',
           name: 'pageintro',
           active: true
         },
@@ -62,7 +62,6 @@ export default {
   color: rgb(40,40,40)
   font-weight: 600
   font-size: 9px
-  letter-spacing: 0.5px
 .active
   color: $purple
   padding-bottom: 0.3rem

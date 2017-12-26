@@ -51,6 +51,9 @@ export default {
   background: whitesmoke
   height: $nav-height
   box-shadow: 0 2px 3px rgba(190,190,190,0.5)
+  position: absolute
+  top: 0
+  z-index: 99
 .nav_container
   width: 92%
   margin: 0 auto
@@ -62,7 +65,7 @@ export default {
   text-decoration: none
   color: rgb(40,40,40)
   font-weight: 500
-  font-size: 10px
+  font-size: $small-text
   text-transform: uppercase
 .active
   color: $purple

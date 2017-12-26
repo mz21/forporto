@@ -33,4 +33,5 @@ html
   max-width: 320px
   max-height: 568px
   background: white
+  position: relative
 </style>

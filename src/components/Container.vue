@@ -1,10 +1,11 @@
 <template lang="jade">
 .container
+  slot
 </template>
 
 <script>
 export default {
-  name: 'PageWeather'
+  name: 'Container'
 }
 </script>
 
@@ -12,5 +13,6 @@ export default {
 @import '~@/globals/variables'
 
 .container
-  height: $nav-height
+  height: calc(100% - #{$nav-height})
+  overflow-y: auto
 </style>

@@ -62,6 +62,7 @@ export default {
   color: rgb(40,40,40)
   font-weight: 500
   font-size: 10px
+  text-transform: uppercase
 .active
   color: $purple
   padding-bottom: 0.3rem

@@ -50,6 +50,7 @@ export default {
   width: 100%
   background: whitesmoke
   height: $nav-height
+  box-shadow: 0 2px 3px rgba(190,190,190,0.5)
 .nav_container
   width: 92%
   margin: 0 auto

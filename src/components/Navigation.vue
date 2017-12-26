@@ -16,17 +16,17 @@ export default {
     return {
       tabs: [
         {
-          title: 'AT A GLANCE',
+          title: 'At a Glance',
           name: 'pageintro',
           active: true
         },
         {
-          title: 'RECOMMENDATIONS',
+          title: 'Recommendations',
           name: 'pagerecommendations',
           active: false
         },
         {
-          title: 'WHAT TO KNOW',
+          title: 'What to Know',
           name: 'pagewhattoknow',
           active: false
         }
@@ -61,7 +61,7 @@ export default {
   text-decoration: none
   color: rgb(40,40,40)
   font-weight: 600
-  font-size: 9px
+  font-size: 10px
 .active
   color: $purple
   padding-bottom: 0.3rem

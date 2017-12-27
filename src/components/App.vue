@@ -23,6 +23,10 @@ export default {
   font-family: GothamNarrow
   font-style: italic
   src: url("~@/assets/fonts/GothamNarrow-BookItalic.otf") format("opentype")
+@font-face
+  font-family: GothamNarrow
+  font-style: normal
+  src: url("~@/assets/fonts/GothamNarrow-Book.otf") format("opentype")
 p, h1, h2, h3, h4, h5, h6
   margin: 0
 html, body, #app

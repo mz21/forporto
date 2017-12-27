@@ -13,6 +13,8 @@ import PageSafety from '@/components/PageSafety'
 import PageWeather from '@/components/PageWeather'
 import PageCurrency from '@/components/PageCurrency'
 import PageVisa from '@/components/PageVisa'
+/* Sub Sub Pages */
+import PagePhrases from '@/components/PagePhrases'
 
 Vue.use(Router)
 
@@ -51,7 +53,14 @@ export default new Router({
         {
           path: 'language',
           name: 'pagelanguage',
-          component: PageLanguage
+          component: PageLanguage,
+          children: [
+            {
+              path: '',
+              name: 'pagephrases',
+              component: PagePhrases
+            }
+          ]
         },
         {
           path: 'get-around',

@@ -9,10 +9,19 @@
 
 <script>
 import Tile from '@/components/Tile'
-import icon from '@/assets/icons/language.svg'
+import iconBoroughs from '@/assets/icons/boroughs.svg'
+import iconCulture from '@/assets/icons/culture.svg'
+import iconDemographics from '@/assets/icons/demographics.svg'
+import iconGetAround from '@/assets/icons/getaround.svg'
+import iconLanguage from '@/assets/icons/language.svg'
+import iconPolitics from '@/assets/icons/politics.svg'
+import iconWeather from '@/assets/icons/weather.svg'
+import iconCurrency from '@/assets/icons/currency.svg'
+import iconVisa from '@/assets/icons/visa.svg'
+import iconSafety from '@/assets/icons/safety.svg'
 
 export default {
-  name: 'PageWhatToKnow',
+  name: 'PageWhatToKnowIntro',
   components: {
     Tile
   },
@@ -20,44 +29,49 @@ export default {
     return {
       tiles: [
         {
+          title: 'BOROUGHS',
+          route: 'boroughs',
+          icon: iconBoroughs
+        },
+        {
+          title: 'CULTURE',
+          route: 'culture',
+          icon: iconCulture
+        },
+        {
           title: 'DEMOGRAPHICS',
-          route: 'language',
-          icon: icon
+          route: 'demographics',
+          icon: iconDemographics
         },
         {
           title: 'LANGUAGE',
           route: 'language',
-          icon: icon
+          icon: iconLanguage
         },
         {
           title: 'GET AROUND',
-          route: 'language',
-          icon: icon
+          route: 'get-around',
+          icon: iconGetAround
         },
         {
-          title: 'CRIME / SAFETY',
-          route: 'language',
-          icon: icon
+          title: 'SAFETY / CRIME',
+          route: 'safety',
+          icon: iconSafety
         },
         {
           title: 'WEATHER',
-          route: 'language',
-          icon: icon
-        },
-        {
-          title: 'POLITICS',
-          route: 'language',
-          icon: icon
-        },
-        {
-          title: 'VISA ENTRY',
-          route: 'language',
-          icon: icon
+          route: 'weather',
+          icon: iconWeather
         },
         {
           title: 'CURRENCY',
-          route: 'language',
-          icon: icon
+          route: 'currency',
+          icon: iconCurrency
+        },
+        {
+          title: 'VISA ENTRY',
+          route: 'visa',
+          icon: iconVisa
         }
       ]
     }
@@ -78,11 +92,13 @@ export default {
   justify-content: center
 .tile_wrapper
   margin: 12px
+  a
+    text-decoration: none !important
 .tagline
   font-family: 'GothamNarrow', 'Gotham Narrow SSm A', 'Gotham Narrow SSm B', Arial, Helvetica
   font-size: $big-text
   padding: $big-text
   font-weight: 400
   font-style: italic
-  color: rgb(40,40,40)
+  color: $text-color
 </style>

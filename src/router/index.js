@@ -4,7 +4,15 @@ import PageIntro from '@/components/PageIntro'
 import PageRecommendations from '@/components/PageRecommendations'
 import PageWhatToKnow from '@/components/PageWhatToKnow'
 import PageWhatToKnowIntro from '@/components/PageWhatToKnowIntro'
+import PageBoroughs from '@/components/PageBoroughs'
+import PageCulture from '@/components/PageCulture'
+import PageDemographics from '@/components/PageDemographics'
 import PageLanguage from '@/components/PageLanguage'
+import PageGetAround from '@/components/PageGetAround'
+import PageSafety from '@/components/PageSafety'
+import PageWeather from '@/components/PageWeather'
+import PageCurrency from '@/components/PageCurrency'
+import PageVisa from '@/components/PageVisa'
 
 Vue.use(Router)
 
@@ -21,13 +29,54 @@ export default new Router({
       component: PageWhatToKnow,
       children: [
         {
-          path: 'language',
-          component: PageLanguage
-        },
-        {
           path: '',
           name: 'pagewhattoknow',
           component: PageWhatToKnowIntro
+        },
+        {
+          path: 'boroughs',
+          name: 'pageboroughs',
+          component: PageBoroughs
+        },
+        {
+          path: 'culture',
+          name: 'pageculture',
+          component: PageCulture
+        },
+        {
+          path: 'demographics',
+          name: 'pagedemographics',
+          component: PageDemographics
+        },
+        {
+          path: 'language',
+          name: 'pagelanguage',
+          component: PageLanguage
+        },
+        {
+          path: 'get-around',
+          name: 'pagegetaround',
+          component: PageGetAround
+        },
+        {
+          path: 'safety',
+          name: 'pagesafety',
+          component: PageSafety
+        },
+        {
+          path: 'weather',
+          name: 'pageweather',
+          component: PageWeather
+        },
+        {
+          path: 'currency',
+          name: 'pagecurrency',
+          component: PageCurrency
+        },
+        {
+          path: 'visa-entry',
+          name: 'pagevisa',
+          component: PageVisa
         }
       ]
     },

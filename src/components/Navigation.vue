@@ -67,7 +67,7 @@ export default {
   padding-top: 18px
 .tab
   text-decoration: none
-  color: rgb(40,40,40)
+  color: $text-color
   font-weight: 500
   font-size: $small-text
   text-transform: uppercase

@@ -1,10 +1,16 @@
 <template lang="jade">
-.container
+container
+  p boroughs
 </template>
 
 <script>
+import Container from '@/components/Container'
+
 export default {
-  name: 'PageTransportation'
+  name: 'PageBoroughs',
+  components: {
+    Container
+  }
 }
 </script>
 

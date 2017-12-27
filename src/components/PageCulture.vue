@@ -1,10 +1,16 @@
 <template lang="jade">
-.container
+container
+  p culture
 </template>
 
 <script>
+import Container from '@/components/Container'
+
 export default {
-  name: 'PageElectronics'
+  name: 'Pageculture',
+  components: {
+    Container
+  }
 }
 </script>
 

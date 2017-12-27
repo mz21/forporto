@@ -19,6 +19,10 @@ export default {
 @import 'sanitize.css'
 @import '~@/assets/fonts/GothamNarrowSsmBook'
 @import '~@/assets/fonts/GothamNarrowSsmMedium'
+@font-face
+  font-family: GothamNarrow
+  font-style: italic
+  src: url("~@/assets/fonts/GothamNarrow-BookItalic.otf") format("opentype")
 p, h1, h2, h3, h4, h5, h6
   margin: 0
 html, body, #app

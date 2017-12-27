@@ -1,12 +1,13 @@
 <template lang="jade">
-  .navigation
-    .nav_container
-      router-link(v-for="(tab, key) in tabs",
-      :to="{ name: tab.name}",
-      v-bind:class="{active: tab.active}",
-      v-bind:key="key",
-      v-on:click.native="changenav(key)").tab
-        {{ tab.title }}
+  .navigation_filler
+    .navigation
+      .nav_container
+        router-link(v-for="(tab, key) in tabs",
+        :to="{ name: tab.name}",
+        v-bind:class="{active: tab.active}",
+        v-bind:key="key",
+        v-on:click.native="changenav(key)").tab
+          {{ tab.title }}
 </template>
 
 <script>
@@ -54,6 +55,9 @@ export default {
   position: absolute
   top: 0
   z-index: 99
+.navigation_filler
+  height: $nav-height
+  width: 100%
 .nav_container
   width: 92%
   margin: 0 auto

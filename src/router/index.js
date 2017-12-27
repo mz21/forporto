@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import PageIntro from '@/components/PageIntro'
-import PageWhatToKnow from '@/components/PageWhatToKnow'
 import PageRecommendations from '@/components/PageRecommendations'
+import PageWhatToKnow from '@/components/PageWhatToKnow'
+import PageWhatToKnowIntro from '@/components/PageWhatToKnowIntro'
+import PageLanguage from '@/components/PageLanguage'
 
 Vue.use(Router)
 
@@ -16,8 +18,18 @@ export default new Router({
     },
     {
       path: '/know/',
-      name: 'pagewhattoknow',
-      component: PageWhatToKnow
+      component: PageWhatToKnow,
+      children: [
+        {
+          path: 'language',
+          component: PageLanguage
+        },
+        {
+          path: '',
+          name: 'pagewhattoknow',
+          component: PageWhatToKnowIntro
+        }
+      ]
     },
     {
       path: '/recommendations/',

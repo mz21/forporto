@@ -1,7 +1,8 @@
 <template lang="jade">
 #app
   Navigation
-  router-view
+  keep-alive
+    router-view
 </template>
 
 <script>

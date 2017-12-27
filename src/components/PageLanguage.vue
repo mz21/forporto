@@ -1,10 +1,16 @@
 <template lang="jade">
-.container
+container
+  p hola
 </template>
 
 <script>
+import Container from '@/components/Container'
+
 export default {
-  name: 'PageLanguage'
+  name: 'PageLanguage',
+  components: {
+    Container
+  }
 }
 </script>
 

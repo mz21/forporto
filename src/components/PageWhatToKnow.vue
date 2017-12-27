@@ -1,14 +1,18 @@
 <template lang="jade">
-.container
+container
+  router-view
 </template>
 
 <script>
+import Container from '@/components/Container'
+
 export default {
-  name: 'PageWhatToKnow'
+  name: 'PageWhatToKnow',
+  components: {
+    Container
+  }
 }
 </script>
 
 <style lang="sass" scoped>
-.container
-  height: calc(100% - 8.5rem)
 </style>

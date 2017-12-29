@@ -78,7 +78,7 @@ export default {
   margin: 0 auto
 .section
   border-bottom: 1px solid rgb(238,238,238)
-  &:last
+  &:last-child
     border-bottom: 0px
 .section_title
   font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B"
